@@ -18,10 +18,18 @@ LL solution1(int n)
     return r;
 }
 
+int solution2(int n)
+{
+	if(n == 0 || n == 1)
+        return 1;
+    return solution2(n - 1) + solution2(n - 2);
+}
+
 int main()
 {
 	int n;
 	cin >> n;
 	cout << solution1(n) << endl;
+	cout << solution2(n) << endl;
 	return 0;
 }
