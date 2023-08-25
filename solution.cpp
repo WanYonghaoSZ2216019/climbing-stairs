@@ -18,10 +18,10 @@ LL solution1(int n)
     return r;
 }
 
-int solution2(int n)
+LL solution2(int n)
 {
 	if(n == 0 || n == 1)
-        return 1;
+        return (LL)1;
     return solution2(n - 1) + solution2(n - 2);
 }
 
